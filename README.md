@@ -1,13 +1,12 @@
 
 ### Demo
-
-[portfolio demo](https://attapat.iamlabs.me)
+[my simple portfolio demo](https://attapat.iamlabs.me)
 
 
 ### 🛠 Skills
 Next.js (Typescript), Tailwind CSS
 
-# Getting Started
+### Getting Started
 ### Setup & Installation
 ```bash
 npm install
