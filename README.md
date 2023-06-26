@@ -1,25 +1,25 @@
 
-## Demo
+### Demo
 
 https://attapat.iamlabs.me
 
 
-## 🛠 Skills
+### 🛠 Skills
 Next.js (Typescript), Tailwind CSS
 
 # Getting Started
-## Setup & Installation
+### Setup & Installation
 ```bash
 npm install
 ```
 
-## Run Development
+### Run Development
 
 ```bash
 npm run dev
 ```
 
-## Build
+### Build
 ```bash
 npm run build
 ```
@@ -27,7 +27,7 @@ npm run build
 npm start
 ```
 
-## Contributing
+### Contributing
 Please make sure to update tests as appropriate. :)
 
 Enjoy to learn ! 😄
