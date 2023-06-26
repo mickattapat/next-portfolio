@@ -28,7 +28,7 @@ export const info = {
     },
     {
       emoji: "📧",
-      text: "attapat.kayasa@gmail.com",
+      text: "attapat.work@gmail.com",
       isLink: '',
       link: false
     },
