@@ -12,7 +12,6 @@ export default function Home() {
         lastName={info.lastName}
         initials={info.initials}
         position={info.position}
-        hobbies={info.hobbies}
         miniBio={info.miniBio}
       />
     </>

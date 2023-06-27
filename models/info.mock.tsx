@@ -20,12 +20,12 @@ export const info = {
       isLink: 'https://blog.iamlabs.me',
       link: true
     },
-    {
-      emoji: "🚀",
-      text: "active",
-      isLink: '',
-      link: false
-    },
+    // {
+    //   emoji: "🚀",
+    //   text: "active",
+    //   isLink: '',
+    //   link: false
+    // },
     {
       emoji: "📧",
       text: "attapat.work@gmail.com",
@@ -67,7 +67,7 @@ export const info = {
       "Kubernetes",
     ],
   },
-  hobbies: [
+    hobbies: [
     {
       label: "learning",
       emoji: "📖",

@@ -1,13 +1,12 @@
 "use client";
 
 import Terminal from "@/components/terminal/terminal"
-import { delay } from "@/utils/allFunc";
+import { motion } from 'framer-motion';
 import Link from "next/link"
 import React from "react"
 
 
 export default async function About({ bio = "", skills = [], hobbies = [] }: AboutModel) {
-  // await delay(10)
   const abouMe = () => {
     return (
       <>
@@ -75,7 +74,6 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
       </>
     )
   }
-
   const hobbiesMe = () => {
     return (
       <>
@@ -99,24 +97,31 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
   }
 
   return (
-    <div className="pt-8 mx-4 lg:mx-0">
-      <div className="flex justify-center w-full">
-        <div className="w-[800px] text-xl font-bold px-4">
-          <div className="flex float-right gap-3 duration-300 hover:text-[#27c93f] hover:gap-0">
-            👉🏻
-            <Link className="underline" target="_blank" href="https://drive.google.com/file/d/1pOJlSU9R_i0RXVBofDKrxMtTcTQhicZi/view?usp=sharing">
-              open cv.
-            </Link>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      id="nav"
+      className="sm:container sm:mx-auto"
+    >
+      <div className="pt-8 mx-4 lg:mx-0">
+        <div className="flex justify-center w-full">
+          <div className="w-[800px] text-xl font-bold px-4">
+            <div className="flex float-right gap-3 duration-300 hover:text-[#27c93f] hover:gap-0">
+              👉🏻
+              <Link className="underline" target="_blank" href={`${process.env.NEXT_PUBLIC_CV_LINK}`}>
+                open cv.
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <div className="text-sm w-[800px]">
+            <Terminal detail={abouMe()} />
+            <Terminal detail={skillsMe()} />
+            <Terminal detail={hobbiesMe()} />
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="text-sm w-[800px]">
-          <Terminal detail={abouMe()} />
-          <Terminal detail={skillsMe()} />
-          <Terminal detail={hobbiesMe()} />
-        </div>
-      </div>
-    </div>
+    </motion.nav>
   )
 }
