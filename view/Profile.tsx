@@ -7,8 +7,7 @@ import { useState } from "react";
 import { RiExternalLinkFill } from "react-icons/ri"
 import emailjs from '@emailjs/browser';
 import { AiOutlineSend } from "react-icons/ai";
-// service_xi8brpt
-// template_4g00l6l
+
 export default function Profile(profile: ProfileModel) {
   const [showModal, setShowModal] = useState<boolean>(false);
 
