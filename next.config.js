@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,
-    domains: ["localhost","placehold.co" , 'attapat.iamlabs.me', 'iamlabs.me'],
+    domains: ["localhost","placehold.co"],
     remotePatterns: [
       {
         protocol: "https",
