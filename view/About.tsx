@@ -6,7 +6,7 @@ import Link from "next/link"
 import React from "react"
 
 
-export default async function About({ bio = "", skills = [], hobbies = [] }: AboutModel) {
+export default async function About({ bio = "", skills = [] }: AboutModel) {
   const abouMe = () => {
     return (
       <>
@@ -74,27 +74,6 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
       </>
     )
   }
-  const hobbiesMe = () => {
-    return (
-      <>
-        <p>
-          <span style={{ color: "rgb(0, 255, 164)" }}>
-            attapatkayasa@attapat ~ %
-          </span>
-          &nbsp;cd &nbsp;hobbies/interests && ls
-        </p>
-        <ul>
-          {hobbies.map((hobbie, index) => {
-            return (
-              <li key={index} className="list-none leading-8 duration-300 hover:-translate-y-1">
-                {hobbie.emoji} &nbsp;{hobbie.label}
-              </li>
-            )
-          })}
-        </ul>
-      </>
-    )
-  }
 
   return (
     <motion.div
@@ -118,7 +97,6 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
           <div className="text-sm w-[800px]">
             <Terminal detail={abouMe()} />
             <Terminal detail={skillsMe()} />
-            <Terminal detail={hobbiesMe()} />
           </div>
         </div>
       </div>

@@ -7,7 +7,6 @@ interface ProfileModel {
   position:string
   miniBio: MiniBio[]
 }
-
 interface MiniBio {
     emoji: any,
     text: string,
@@ -15,15 +14,8 @@ interface MiniBio {
     isLink: string,
 
 }
-interface HobbiesModel {
-  label: string;
-  emoji: string;
-}
-
-
 // About
 type AboutModel = {
   bio: string,
   skills: any,
-  hobbies: any[]
 }

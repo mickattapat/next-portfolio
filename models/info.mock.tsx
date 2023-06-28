@@ -67,26 +67,4 @@ export const info = {
       "Kubernetes",
     ],
   },
-    hobbies: [
-    {
-      label: "learning",
-      emoji: "📖",
-    },
-    {
-      label: "theater",
-      emoji: "🎭",
-    },
-    {
-      label: "movies",
-      emoji: "🎥",
-    },
-    {
-      label: "music",
-      emoji: "🎹",
-    },
-    {
-      label: "play_games",
-      emoji: "🎮",
-    },
-  ],
 }

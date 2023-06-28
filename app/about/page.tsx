@@ -8,7 +8,7 @@ export default function AboutPage({ }: Props) {
   return (
     <>
     {/* @ts-expect-error Server Component */}
-    <About bio={info.bio} skills={info.skills} hobbies={info.hobbies} />
+    <About bio={info.bio} skills={info.skills} />
     </>
 
   )
