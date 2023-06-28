@@ -1,5 +1,4 @@
 "use client";
-
 import { delay } from "@/utils/allFunc";
 import Image from "next/image";
 import React from "react"

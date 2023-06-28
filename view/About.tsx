@@ -1,5 +1,4 @@
 "use client";
-
 import Terminal from "@/components/terminal/terminal"
 import { motion } from 'framer-motion';
 import Link from "next/link"

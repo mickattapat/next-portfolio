@@ -1,7 +1,3 @@
-import classNames from "classnames"
-
-import styles from "./terminal.module.css"
-
 type Props = {
   detail:any
 }
