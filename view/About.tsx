@@ -7,6 +7,7 @@ import React from "react"
 
 
 export default async function About({ bio = "", skills = [] }: AboutModel) {
+  const softSkills = ["Active listening" , "Adaptability", "Problem-solving", "Creativity", "Accountability", "Confidence", "Time and project management"]
   const abouMe = () => {
     return (
       <>
@@ -16,12 +17,7 @@ export default async function About({ bio = "", skills = [] }: AboutModel) {
           </span>
           &nbsp;cat &nbsp;about-attapat
         </p>
-        <p>
-          <span style={{ color: "rgb(0, 255, 164)" }}>
-            attapatkayasa@attapat ~ %
-          </span>
-        </p>
-        <p>{bio}</p>
+        <p className="text-justify px-4">&nbsp;&nbsp;&nbsp;&nbsp;{bio}</p>
       </>
     )
   }
@@ -33,7 +29,7 @@ export default async function About({ bio = "", skills = [] }: AboutModel) {
           <span style={{ color: "rgb(0, 255, 164)" }}>
             attapatkayasa@attapat ~ %
           </span>
-          &nbsp;cd &nbsp;frontend/skills/tools && ls
+          &nbsp;cd &nbsp;frontend/skills && ls
         </p>
         <ul>
           <li className="inline-block list-none py-2 px-4" style={{ color: "#27c93f" }}>Proficient With</li>
@@ -45,11 +41,12 @@ export default async function About({ bio = "", skills = [] }: AboutModel) {
             )
           })}
         </ul>
+        <br />
         <p>
           <span style={{ color: "rgb(0, 255, 164)" }}>
             attapatkayasa@attapat ~ %
           </span>
-          &nbsp;cd &nbsp; backend/skills/tools && ls
+          &nbsp;cd &nbsp; backend/skills && ls
         </p>
         <ul>
           <li className="inline-block list-none py-2 px-4" style={{ color: "#27c93f" }}>Intermediate</li>
@@ -64,6 +61,22 @@ export default async function About({ bio = "", skills = [] }: AboutModel) {
         <ul>
           <li className="inline-block list-none py-2 px-4" style={{ color: "#27c93f" }}>Basic</li>
           {skills.Intermediate_BE_Basic.map((skill: string, index: number) => {
+            return (
+              <li key={index} className="inline-block list-none py-2 px-4 duration-300 hover:-translate-y-1">
+                {skill}
+              </li>
+            )
+          })}
+        </ul>
+        <br />
+        <p>
+          <span style={{ color: "rgb(0, 255, 164)" }}>
+            attapatkayasa@attapat ~ %
+          </span>
+          &nbsp;cat &nbsp; soft-skills
+        </p>
+        <ul>
+          {softSkills.map((skill: string, index: number) => {
             return (
               <li key={index} className="inline-block list-none py-2 px-4 duration-300 hover:-translate-y-1">
                 {skill}
