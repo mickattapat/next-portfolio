@@ -20,7 +20,7 @@ function HireMeModal({ onClose, onRequest }:any) {
 			{/* Modal Backdrop */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
 			{/* Modal Content */}
-			<main className="flex flex-col px-3 items-center justify-center w-full my-8">
+			<main className="flex flex-col px-3 items-center justify-center w-full h-full">
 				<div className="modal-wrapper flex items-center w-full h-full justify-center z-30">
 					<div className="modal w-full max-w-md  xl:max-w-xl lg:max-w-xl md:max-w-xl bg-[#ffffff] dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
