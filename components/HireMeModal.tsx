@@ -20,11 +20,11 @@ function HireMeModal({ onClose, onRequest }:any) {
 			{/* Modal Backdrop */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
 			{/* Modal Content */}
-			<main className="flex flex-col px-3 items-center justify-center h-full w-full">
+			<main className="flex flex-col px-3 items-center justify-center w-full my-8">
 				<div className="modal-wrapper flex items-center w-full h-full justify-center z-30">
 					<div className="modal w-full max-w-md  xl:max-w-xl lg:max-w-xl md:max-w-xl bg-[#ffffff] dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
-							<h5 className=" text-primary-dark dark:text-primary-light text-xl">
+							<h5 className="text-primary-dark dark:text-primary-light text-xl">
 								CONTACT FORM
 							</h5>
 							<button
@@ -34,7 +34,7 @@ function HireMeModal({ onClose, onRequest }:any) {
 								<FiX className="text-3xl" />
 							</button>
 						</div>
-						<div className="modal-body p-5 w-full h-full">
+						<div className="modal-body p-5 w-full max-h-[80vh] overflow-auto">
 							<form
 								ref={form}
 								onSubmit={(e) => {senRequest(e)}}
@@ -47,7 +47,7 @@ function HireMeModal({ onClose, onRequest }:any) {
 										name="name"
 										type="text"
 										required
-										placeholder="Name"
+										placeholder="Your Name"
 										aria-label="Name"
 									/>
 								</div>
@@ -58,11 +58,11 @@ function HireMeModal({ onClose, onRequest }:any) {
 										name="email"
 										type="email"
 										required
-										placeholder="Email"
+										placeholder="Your Email"
 										aria-label="Email"
 									/>
 								</div>
-
+								
 								<div className="mt-6">
 									<textarea
 										className="w-full px-5 py-2 border focus:outline-none focus:border-[#6bfaae] focus:ring-1 focus:ring-[#6bfaae] dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
