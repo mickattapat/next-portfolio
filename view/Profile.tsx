@@ -33,10 +33,10 @@ export default function Profile(profile: ProfileModel) {
   }
   // await delay(10)
   return (
-    <motion.nav
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      id="nav"
+      id="div"
       className="sm:container sm:mx-auto"
     >
       <div className="z-10 flex flex-col justify-center items-center lg:flex-row profile">
@@ -101,6 +101,6 @@ export default function Profile(profile: ProfileModel) {
         ) : null}
         {/* { showModal ? showHireMeModal : null } */}
       </div>
-    </motion.nav>
+    </motion.div>
   );
 }

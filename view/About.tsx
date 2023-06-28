@@ -97,10 +97,10 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
   }
 
   return (
-    <motion.nav
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      id="nav"
+      id="div"
       className="sm:container sm:mx-auto"
     >
       <div className="pt-8 mx-4 lg:mx-0">
@@ -122,6 +122,6 @@ export default async function About({ bio = "", skills = [], hobbies = [] }: Abo
           </div>
         </div>
       </div>
-    </motion.nav>
+    </motion.div>
   )
 }

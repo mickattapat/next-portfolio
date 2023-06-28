@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Layout>
-          <div className="content">
+          <div className="content lg:max-w-[980px] mx-auto">
             {children}
           </div>
         </Layout>
