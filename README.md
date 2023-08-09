@@ -27,7 +27,8 @@ npm start
 ```
 
 ### Contributing
-Please make sure to update tests as appropriate. :)
+There may be "any" type but you can change,
+make sure to update tests as appropriate. :)
 
 Enjoy to learn ! 😄
 
